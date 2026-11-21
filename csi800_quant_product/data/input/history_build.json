@@ -1,0 +1,46 @@
+{
+  "mode": "online_build_history",
+  "start": "2019-03-15",
+  "end": "2026-11-20",
+  "bar_provider": "auto",
+  "created_utc": "2026-11-21T08:08:04+00:00",
+  "sessions": {
+    "status": "cached",
+    "rows": 2863,
+    "sha256": "c8d829af3041f21c89c593e4a9bde1298e7db2aed79bb2a788517eff53ceebc6"
+  },
+  "benchmark": {
+    "calendar_status": "cached",
+    "calendar_rows": 1865,
+    "calendar_sha256": "5fde4d80dfbfdddf5c92c7ef18119b9f8f8439e9ad41fe61e545f94c74fd4f4f",
+    "total_return": {
+      "status": "cached",
+      "rows": 1875,
+      "sha256": "635ff248850021f24f251684c6a97ac9505919867a1f6fb11e552c437e8f319a"
+    }
+  },
+  "constituent_union_codes": 1334,
+  "quality_history": {
+    "status": "published",
+    "rows": 43631,
+    "securities": 1280,
+    "periods_collected": 35,
+    "periods_requested": 35,
+    "first_report_date": "2018-03-31",
+    "last_report_date": "2026-09-30",
+    "sha256": "999b6997faf2b447ec3233abfb747891bb5167007bb99d770d1a97160753b8b9",
+    "errors": {},
+    "caveat": "Eastmoney RPT_LICO_FN_CPD supplies original NOTICE_DATE per quarter; subsequent restatements overwrite historical values in-place on the vendor side."
+  },
+  "membership": {
+    "status": "published",
+    "intervals": 1521,
+    "distinct_codes": 1334,
+    "observation_dates": 76,
+    "first_start_date": "2019-03-01",
+    "last_observation_date": "2026-11-20",
+    "industry_covered_share": 0.9631821170282708,
+    "sha256": "0029601c78fb55ae0971757d004209e580a47bf17004300619f3a81a2be2752c",
+    "source": "baostock_monthly_observation_reconstructed"
+  }
+}

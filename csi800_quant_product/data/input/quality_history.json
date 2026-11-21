@@ -1,0 +1,12 @@
+{
+  "status": "published",
+  "rows": 43631,
+  "securities": 1280,
+  "periods_collected": 35,
+  "periods_requested": 35,
+  "first_report_date": "2018-03-31",
+  "last_report_date": "2026-09-30",
+  "sha256": "999b6997faf2b447ec3233abfb747891bb5167007bb99d770d1a97160753b8b9",
+  "errors": {},
+  "caveat": "Eastmoney RPT_LICO_FN_CPD supplies original NOTICE_DATE per quarter; subsequent restatements overwrite historical values in-place on the vendor side."
+}

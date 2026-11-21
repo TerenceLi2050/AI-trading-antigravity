@@ -1,0 +1,11 @@
+{
+  "status": "published",
+  "intervals": 1521,
+  "distinct_codes": 1334,
+  "observation_dates": 76,
+  "first_start_date": "2019-03-01",
+  "last_observation_date": "2026-11-20",
+  "industry_covered_share": 0.9631821170282708,
+  "sha256": "0029601c78fb55ae0971757d004209e580a47bf17004300619f3a81a2be2752c",
+  "source": "baostock_monthly_observation_reconstructed"
+}
