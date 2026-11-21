@@ -1,0 +1,79 @@
+[data]
+legacy_csv = "中证800_data_20190315to20261009.csv"
+cache = "data/cache"
+updates = "data/updates"
+daily_updates = "data/daily"
+warmup_sessions = 260
+membership = "data/input/membership.csv"
+financials = "data/input/financials.csv"
+status = "data/input/status.csv"
+calendar = "data/input/calendar.csv"
+session_calendar = "data/input/sessions.csv"
+total_return = "data/input/csi800_total_return.csv"
+canonical_quotes = "data/input/quotes.parquet"
+raw_history = "data/input/raw_history.parquet"
+quality_history = "data/input/quality_history.csv"
+output = "reports"
+minimum_cross_section = 100
+minimum_member_count = 780
+minimum_member_coverage = 0.95
+minimum_fundamental_coverage = 0.80
+maximum_staleness_days = 5
+settled_after_cst = "15:35"
+history_start = "2019-03-15"
+bar_provider = "auto"
+
+[eligibility]
+min_valid_bars_60 = 55
+min_listing_sessions = 120
+min_median_amount = 20000000
+min_raw_price = 3.0
+max_jump = 0.35
+fundamental_max_age_days = 190
+minimum_quality_rank = 0.60
+minimum_cash_conversion = 0.50
+quality_weight = 0.35
+baseline_profile = "ashare"
+quality_profile = "value_cash_quality"
+industry_neutralize = false
+use_extended_factors = true
+use_pit_valuation_features = true
+
+[research]
+lockbox_start = "2025-06-01"
+prior_notebook_signal = "2026-10-08"
+oos_start = "2022-01-01"
+horizon = 20
+embargo = 5
+sample_every = 5
+rebalance_every = 20
+train_sessions = 756
+min_train_dates = 60
+refit_months = 6
+threads = 4
+seed = 42
+exit_delay_sensitivity = 5
+active_models = ["ridge", "lgbm_huber", "catboost"]
+explain_model = "auto"
+sample_decay_half_life = 252
+
+[screening]
+model_path = ""
+model_weight = 0.0
+
+[portfolio]
+top_k = 20
+keep_rank = 60
+cash = 1000000.0
+max_weight = 0.06
+max_industry_names = 5
+max_financial_names = 7
+default_allocation = "inverse_volatility"
+max_adv_participation = 0.01
+commission = 0.00025
+min_commission = 5.0
+transfer_fee = 0.00002
+transfer_fee_after_2022_04_29 = 0.00001
+stamp_duty = 0.001
+stamp_duty_after_2023_08_28 = 0.0005
+slippage_bps = 8.0
